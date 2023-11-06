@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root {
-  --teal: crimson;
+  --teal: teal;
 }
 
 * {
@@ -49,12 +49,13 @@ section {
 
 .btn {
   display: inline-block;
-  padding: .8rem 3rem;
-  border: .2rem solid var(--teal);
-  color: var(--teal);
+  padding: 1rem 2rem;
+  background: var(--teal);
+  color: #012;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 1.7rem;
-  border-radius: 2rem;
+  font-size: 2rem;
+  border-radius: 3px;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -79,7 +80,7 @@ section {
 }
 
 .btn:hover {
-  color: #001;
+  color: #fff;
 }
 
 header {
@@ -188,19 +189,18 @@ header .navbar a:hover {
 }
 
 .home {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  min-height: 100vh;
-  align-items: center;
-  background: url(../images/home-bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.home .content {
-  flex: 1 1 40rem;
-  padding-top: 6.5rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('images/bg.jpg');
+    background-position: center center;
+    background-size:cover;
+    margin-top: 5px;
+    padding: 10px;
 }
 
 
@@ -216,14 +216,17 @@ header .navbar a:hover {
   }
 }
 
-.home .content h3 {
-  font-size: 5rem;
-  color: #eee;
+.home .content h1 {
+  font-size: 5.5rem;
+  color: var(--teal);
+  font-weight: bold;
 }
 
 .home .content p {
-  font-size: 1.7rem;
-  color: #ddd;
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: 1px 1px #012;
   padding: 1rem 0;
 }
 
@@ -518,8 +521,8 @@ header .navbar a:hover {
 }
 
 .footer .social-icons img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .footer .credit {
@@ -537,17 +540,17 @@ header .navbar a:hover {
   position: fixed;
   top: -120%;
   right: 2rem;
-  padding: .5rem 1.5rem;
-  font-size: 3rem;
+  padding: 1rem 2rem;
+  font-size: 4rem;
   background: var(--teal);
-  color: #001;
-  border-radius: 40%;
+  color: #012;
+  border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;
 }
 
 #scroll-top.active {
-  top: calc(100% - 12rem)
+  top: calc(100% - 8rem)
 }
 
 /* media queries  */
